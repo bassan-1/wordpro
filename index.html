@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <title>Styled Form</title>
+</head>
+<body>
+    <form action="program01.py" method="post">
+        <h3>テスト用フォーム</h3>
+        <p>Webアプリの動作を確認するためのフォームです。適当な値を入力し送信ボタンを押下してください。</p>
+    	<div class="input">
+            <label>text:</label>
+            <input type="text" name="field01">
+        </div>
+    	<div class="input">
+            <label>checkbox:</label>
+            <label>元気？:<input type="checkbox" name="field02" value="GENKI"></label>
+            <label>嬉しい？:<input type="checkbox" name="field02" value="URESI"></label>
+        </div>
+    	<div class="input">
+            <label>radio:</label>
+            <label><input type="radio" name="field03" value="男性">男性</label>
+            <label><input type="radio" name="field03" value="女性">女性</label>
+        </div>
+    	<div class="input">
+            <label>select:</label>
+            <select name="field04">
+              <option value="北海道">北海道</option>
+              <option value="青森">青森</option>
+              <option value="秋田">秋田</option>
+            </select>
+        </div>
+    	<div class="input">
+           <label>select multiple:</label>
+           <select name="field05"  multiple>
+              <option value="北海道">北海道</option>
+              <option value="青森">青森</option>
+              <option value="秋田">秋田</option>
+            </select>            
+        </div>         
+    	<div class="input">
+            <label>textarea:</label>
+           <textarea name="field06" cols="20" rows="5"></textarea>
+        </div>
+        <div id="submit">
+             <input type="submit" value="送信">
+        </div>    
+    </form>
+</body>
+</html>
